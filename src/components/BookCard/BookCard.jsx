@@ -12,18 +12,25 @@ function BookCard({ book }) {
 
   return (
     <li className="card-wrapper">
-      <div>
+      <div className="info-wrapper">
         <h2>
-          {book.name}
-          <br />
-          <span>{book.subName}</span>
+          {book.name || 'Title unavailable'}
+          {book.subName && (
+            <>
+              <br />
+              <span>{book.subName}</span>
+            </>
+          )}
         </h2>
-        <p>{book.author ? formatAuthor(book.author) : 'Author unavailable'}</p>
-        <p>{book.pubDate?.slice(0, 4)}</p>
-        <p>{book.category}</p>
-        <p>{book.format}</p>
+        {book.author ? <p>{formatAuthor(book.author)}</p> : <p>Author unavailable</p>}
+        {book.pubDate && <p>{book.pubDate.slice(0, 4)}</p>}
+        {book.category && <p>{book.category}</p>}
+        {book.format && <p>{book.format}</p>}
       </div>
-      <img className="jacket-cover" src={imgSrc} onError={() => setImgSrc(imagePlaceholder)} />
+      <div className="jacket-wrapper">
+        <img className="jacket-cover" src={imgSrc} onError={() => setImgSrc(imagePlaceholder)} />
+        {imgSrc === imagePlaceholder && <p>Cover unavailable</p>}
+      </div>
     </li>
   );
 }
