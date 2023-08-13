@@ -6,6 +6,10 @@ import imagePlaceholder from '../../assets/icons8-image-64.png';
 function BookCard({ book }) {
   const [imgSrc, setImgSrc] = useState(book.images ? book.images[0].uri : imagePlaceholder);
 
+  function formatAuthor(author) {
+    return author.split(',').reverse().join(' ');
+  }
+
   return (
     <li className="card-wrapper">
       <div>
@@ -14,7 +18,7 @@ function BookCard({ book }) {
           <br />
           <span>{book.subName}</span>
         </h2>
-        <p>{book.author}</p>
+        <p>{book.author ? formatAuthor(book.author) : 'Author unavailable'}</p>
         <p>{book.pubDate?.slice(0, 4)}</p>
         <p>{book.category}</p>
         <p>{book.format}</p>
