@@ -1,15 +1,11 @@
-import PropTypes from 'prop-types';
+import BookCard from '../BookCard/BookCard';
 
 function BookList({ data }) {
   const bookCards = data.map((book) => {
-    return <li key={book.ean}>{book.name}</li>;
+    return <BookCard book={book} key={book.ean} />;
   });
 
   return <ul>{bookCards}</ul>;
 }
-
-BookList.propTypes = {
-  data: PropTypes.array,
-};
 
 export default BookList;
