@@ -1,0 +1,14 @@
+.card-wrapper {
+  padding: 1rem;
+  border: 1px solid #120900;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.jacket-cover {
+  max-height: 150px;
+  max-width: 150px;
+}
