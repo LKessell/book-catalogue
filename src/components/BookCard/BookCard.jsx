@@ -14,7 +14,10 @@ function BookCard({ book }) {
           <br />
           <span>{book.subName}</span>
         </h2>
-        <h3>{book.author}</h3>
+        <p>{book.author}</p>
+        <p>{book.pubDate?.slice(0, 4)}</p>
+        <p>{book.category}</p>
+        <p>{book.format}</p>
       </div>
       <img className="jacket-cover" src={imgSrc} onError={() => setImgSrc(imagePlaceholder)} />
     </li>
