@@ -1,6 +1,6 @@
 .card-wrapper {
-  padding: 1rem;
-  border: 1px solid #120900;
+  padding: 1rem 3rem;
+  border: 1px solid #1209002a;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -8,7 +8,15 @@
   margin: 0.5rem;
 }
 
+.info-wrapper {
+  margin: auto;
+}
+
+.jacket-wrapper {
+  margin-right: 3rem;
+}
+
 .jacket-cover {
-  max-height: 150px;
-  max-width: 150px;
+  max-height: 200px;
+  max-width: 200px;
 }
