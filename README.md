@@ -6,7 +6,7 @@ A simple catalog for viewing data on various book-related products. Includes fal
 
 - Clone the repo onto your machine and run `cd book-catalogue`
 - Run `npm install` to install dependencies
-- Run `npm dev` to view in your browser
+- Run `npm run dev` to view in your browser
 
 ## Future Additions
 
