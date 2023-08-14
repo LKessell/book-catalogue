@@ -1,4 +1,4 @@
-# Book Catalogue
+# 📚 Book Catalogue
 
 A simple catalog for viewing data on various book-related products. Includes fallbacks for missing images, non-functioning image links, missing data, and responsive styling.
 
