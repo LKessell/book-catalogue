@@ -12,11 +12,30 @@
   margin: auto;
 }
 
+.info-wrapper p {
+  margin: 0.5rem;
+}
+
+.info-wrapper h2 {
+  margin: 0.75rem;
+}
+
 .jacket-wrapper {
   margin-right: 3rem;
+  min-width: 150px;
 }
 
 .jacket-cover {
   max-height: 200px;
   max-width: 200px;
+}
+
+@media screen and (max-width: 650px) {
+  .card-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .jacket-wrapper {
+    margin-right: 0;
+  }
 }
