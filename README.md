@@ -1,8 +1,20 @@
-# React + Vite
+# Book Catalogue
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple catalog for viewing data on various book-related products. Includes fallbacks for missing images, non-functioning image links, missing data, and responsive styling.
 
-Currently, two official plugins are available:
+## Installation/Setup Instructions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Clone the repo onto your machine and run `cd book-catalogue`
+- Run `npm install` to install dependencies
+- Run `npm dev` to view in your browser
+
+## Future Additions
+
+- Make each card link to a dedicated page containing all information for a specific title or product
+- Add an "enlarge image" option
+- Add headings to data items?
+- Polish styling
+
+## Credits
+
+<a target="_blank" href="https://icons8.com/icon/13171/literature">Book</a>, <a target="_blank" href="https://icons8.com/icon/gvREvRHzVcWz/image">Image</a> icons by <a target="_blank" href="https://icons8.com">Icons8</a>
