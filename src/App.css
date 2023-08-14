@@ -4,3 +4,9 @@
   padding: 2rem;
   text-align: center;
 }
+
+@media screen and (max-width: 650px) {
+  #root {
+    padding: 0.5rem;
+  }
+}
